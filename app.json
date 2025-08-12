@@ -1,37 +1,35 @@
-
 {
-    "name": "anonymous",
-    "description": "anonymous",
-    "repository": "https://github.com/",
-    "keywords": [
-        "telegram bot",
-        "pyrogram"
-    ],
-    "env": {
-        "API_ID":{
-            "description": "Get your telegram API ID from https://my.telegram.org",
-            "value":"22537641"
-        },
-        "API_HASH":{
-            "description":"Get your telegram API HASH from https://my.telegram.org",
-		    "value":"6c1eee32be959812f0598919209a2105"
-        },
-        "BOT_TOKEN":{
-            "description":"Get from BotFather",
-            "value":"8492211807:AAHbsGQREbjPHATmPiNog6ZgQxNk9aA_c9o"
-        },
-        "AUTH_USERS":{
-            "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
-             "value":"6748247898"
-       
-	}
+  "name": "Anonymous Telegram Bot",
+  "description": "A powerful Telegram bot using Pyrogram",
+  "repository": "https://github.com/surabhai00007/My-v2",
+  "keywords": [
+    "telegram bot",
+    "pyrogram",
+    "python",
+    "ffmpeg"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Get your Telegram API ID from https://my.telegram.org",
+      "value": "22537641"
     },
-    "addons": [],
-    "buildpacks": [
-        {
-	  "url": "heroku/python"
-          "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-	 "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
-	
-	    
-    
+    "API_HASH": {
+      "description": "Get your Telegram API HASH from https://my.telegram.org",
+      "value": "6c1eee32be959812f0598919209a2105"
+    },
+    "BOT_TOKEN": {
+      "description": "Get your bot token from BotFather",
+      "value": "8492211807:AAHbsGQREbjPHATmPiNog6ZgQxNk9aA_c9o"
+    },
+    "AUTH_USERS": {
+      "description": "Admin/Owner/Friends ID, separated by commas. Example: 44578878,8878899",
+      "value": "6748247898"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    { "url": "heroku/python" },
+    { "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git" },
+    { "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview" }
+  ]
+}
